@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  // Declarar dos arreglos de 5 enteros.
+  int arreglo1[5], arreglo2[5];
+
+  // Leer 5 números en el arreglo1.
+  for (int i = 0; i < 5; i++) {
+    cout << "Ingrese un número: ";
+    cin >> arreglo1[i];
+  }
+
+  // Copiar los números del arreglo1 al arreglo2, multiplicados por 2.
+  for (int i = 0; i < 5; i++) {
+    arreglo2[i] = arreglo1[i] * 2;
+  }
+
+  // Mostrar el contenido del arreglo2.
+  for (int i = 0; i < 5; i++) {
+    cout << arreglo2[i] << " ";
+  }
+
+  cout << endl;
+
+  return 0;
